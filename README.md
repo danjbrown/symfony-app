@@ -18,7 +18,7 @@ yarn install
 php -S 127.0.0.1:8000 -t public
 ```
 
-5. Load the application in a browser at http://127.0.0.1:8000/index
+5. Load the application in a browser at http://127.0.0.1:8000
 
 # Managing CSS
 

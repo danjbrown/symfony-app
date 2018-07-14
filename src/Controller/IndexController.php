@@ -12,7 +12,7 @@ class IndexController extends AbstractController
         $number = random_int(0, 100);
 
         return $this->render('index.html.twig', array(
-            'number' => $number,
+            'page' => 'homepage',
         ));
     }
 }
