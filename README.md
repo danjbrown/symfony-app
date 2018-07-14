@@ -1,28 +1,29 @@
-Symfony 4 Start Application
+# Symfony 4 Starter Application
 
-Clone the repository
+1. Clone the repository
 
-Install the application
+2. Install the application
 ```
-composer install\
-```
-
-Managing CSS
-
-Install Webpack Encore
-```
-yarn add @symfony/webpack-encore --dev
-yarn add webpack-notifier --dev
+composer install
+yarn install
 ```
 
-Run Encore and recompile files when changed
+3. Run Webpack Encore to recompile the CSS files when they are changed
 ```
  ./node_modules/.bin/encore dev --watch
 ```
 
-Run the app
+4. Run the application
 ```
-Run the app: php -S 127.0.0.1:8000 -t public
+php -S 127.0.0.1:8000 -t public
 ```
 
-Load the app in a browser at http://127.0.0.1:8000/index
+5. Load the application in a browser at http://127.0.0.1:8000/index
+
+# Managing CSS
+
+The application comes with Webpack Encore installed via yarn install, but it could also be installed manually
+```
+yarn add @symfony/webpack-encore --dev
+yarn add webpack-notifier --dev
+```
