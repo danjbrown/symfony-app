@@ -37,7 +37,7 @@ class CustomUserProvider implements UserProviderInterface
         // in security.yml, and then checked internally by Symfony against the encrypted value returned by the service.
         // This example uses a plaintext password.
 
-        // Data as returned by the user service; if no user exists return false
+        // Data as returned by the user service; if no user exists returns false
         $userData = array('username' => 'admin', 'password' => 'admin', 'salt' => '', 'roles' => array('ROLE_ADMIN'));
         
         // if valid, the user is authenticated
