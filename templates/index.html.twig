@@ -2,5 +2,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>This is the {{ page }}</h1>
+    <h1>Welcome {{username}}! This is the {{ page }}</h1>
+    <p><a href='{{path('logout')}}'>Logout</a></p>
 {% endblock %}
