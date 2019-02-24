@@ -1,10 +1,11 @@
 security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        userservice:
+        entity_provider:
             id: App\Security\User\CustomUserProvider
     encoders:
-        App\Security\User\CustomUser: plaintext
+        App\Security\User\CustomUser:
+           id: App\Security\User\CustomPasswordEncoder
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
